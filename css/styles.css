@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+#title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h1 {
+font-weight: 400;
+}
+body::before {
+ padding-top: 30px;
+ content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+ background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://oauife.edu.ng/images/23.jpeg);
+    background-size: cover;
+     background-repeat: no-repeat;
+    background-position: center;
+}
+body {
+  font-family: 'poppins', sans-serif;
+  padding: 0px;
+  }
+.up-container {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+.down-container {
+  background-color: rgba(27, 27, 50, 0.8);
+  padding: 38px;
+  width: 500px;
+  margin: 20px auto 0 auto;
+  border-radius: 0.35rem;
+}
+@media query (max-width: 550px) {
+ .down-container {
+   margin: 20px auto 0 auto;
+   width: 100%;
+ }
+}
+#description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+}
+#survey-form {
+  color: white;
+  line-height: 1.8;
+  text-align: left;
+}
+input, select {
+  width: 100%;
+}
+input[placeholder] {
+  font-size: 16px;
+}
+textarea[placeholder] {
+  font-size: 16px;
+  font-family: "Gill Sans", sans-serif;
+   padding: 0.625rem;
+   min-height: 120px;
+   width: 100%;
+   resize: vertical;
+}
+.radio, .input-checkbox {
+    width: 20px;
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+.input-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    outline: none;
+}
+.input-control:focus {
+  border: 2px solid #13265C;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255/ 25%)
+}
+p {
+  margin-top: 20;
+  margin-bottom: 0;
+}
+#submit {
+  margin-top: 30;
+  height: 3em;
+  background-color: #37af65;
+  color: white;
+  border: 0;
+  border-radius: px;
+  cursor: pointer;
+}

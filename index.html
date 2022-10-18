@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Obafemi Awolowo University Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="up-container"><header>
+      <h1 id="title">Obafemi Awolowo University Survey Form</h1>
+      <p id="description">MOTTO: For Learning and Culture</p>
+    </header></div>
+    <div class="down-container">
+      <form id="survey-form" action="mailto:atilolahabeeb2000@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+        <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" class="input-control" required/></label></div>
+        <div><br>
+        <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your Email" class="input-control" required/></label></div><br>
+        <div>
+        <label id="number-label">Age (optional) <input id="number" type="number" placeholder="Age" min="10" max="99" class="input-control" required/></label></div>
+        <div><br>
+        <label>What is your Secondary School Department?
+          <select id="dropdown" class="input-control" required>
+          <option disabled="" selected="" value="">Select Department</option>
+          <option value="science">Science</option>
+          <option value="arts">Arts</option>
+          <option value="commercial">Commercial</option>
+          <option value="other">Other</option>
+        </select></label>
+        <p>Would you recommend Obafemi Awolowo University to a friend?</p>
+         <div><input type="radio" name="recommend-choice" value="radio-1" class="radio"/><label for="radio">Definitely</label></div>
+         <div><input type="radio" name="recommend-choice" value="radio-2" class="radio"/><label for="radio">Maybe</label></div>
+         <div><input type="radio" name="recommend-choice" value="radio-3" class="radio"/><label for="radio">Not sure</label></div>
+         <div class="form-group">
+          <p>How long do you intend to use in Obafemi Awolowo University?</p>
+          <select id="most-like" name="mostLike" class="input-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="3-years">3 years</option>
+            <option value="4-years">4 years</option>
+            <option value="5-years">5 years</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            What faculty will you like to apply?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <div><label><input name="prefer" value="faculty-of-science" type="checkbox" class="input-checkbox">Faculty of Science</label></div>
+          <label>
+          <div><input name="prefer" value="faculty-of-Arts" type="checkbox" class="input-checkbox">Falculty of Arts</label></div>
+          <div><label><input name="prefer" value="faculty-of-social-sciences" type="checkbox" class="input-checkbox">Faculty of Social Science</label></div>
+          <div><label><input name="prefer" value="Faculty of Pharmacy" type="checkbox" class="input-checkbox">Falculty of Pharmacy</label></div>
+          <div><label><input name="prefer" value="faculty-of-Education" type="checkbox" class="input-checkbox">Faculty of Education</label></div>
+          <div><label><input name="prefer" value="faculty-of-dentistry" type="checkbox" class="input-checkbox">Faculty of Dentistry</label></div>
+          <div><label><input name="prefer" value="faculty-of-agriculture" type="checkbox" class="input-checkbox">Faculty of Agriculture</label></div>
+          <div><label><input name="prefer" value="faculty-of-administration" type="checkbox" class="input-checkbox">Faculty of Administration</label></div>
+          <div><label><input name="prefer" value="faculty-of-Technology" type="checkbox" class="input-checkbox">Faculty of Technology</label></div>
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment"  placeholder="Enter your comment here..."></textarea>
+        <input type="submit" id="submit"/>
+      </form>
+    </div>
+  </body>
+</html>
